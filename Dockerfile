@@ -1,0 +1,5 @@
+FROM postgres:latest
+
+ENV POSTGRES_DB=db_almanaque
+ENV POSTGRES_USER=user
+ENV POSTGRES_PASSWORD=pass
