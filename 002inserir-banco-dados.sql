@@ -10,7 +10,7 @@ VALUES ('Civic', 'Honda', 'Sedan', FALSE, 2019);
 INSERT TO carros (nome, marca, modelo, vendido, ano)
 VALUES
     ('Civic', 'Honda', 'Sedan', FALSE, 2019),
-    ('Gol', 'Volkswagen', 'Hatchback', TRUE, 2017);
+    ('Gol', 'Volkswagen', 'Hatchback', TRUE, 2017),
     ('Sentra', 'Nissan', 'Sedan'. FALSE, 2022);
 
 -- 3. Inserir dados de outra tabela
