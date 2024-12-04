@@ -12,7 +12,7 @@
 
 ## Pedágio
 
-Primeiramente, quero que saiba que será disponibilizado um arquivo Dockerfile contendo uma imagem base do PostgreSQL. Eu utilizarei o programa DBeaver para manipular o banco de dados com interface gráfica, mas sinta-se a vontade de utilizar o que você desejar.
+Primeiramente, quero que saiba que será disponibilizado um arquivo Dockerfile contendo uma imagem base do PostgreSQL. Eu utilizarei o programa DBeaver para manipular o banco de dados com interface gráfica, mas sinta-se a vontade de utilizar o que você desejar. PS: Alguns comandos podem ser diferentes para cada banco de dados, neste caso utilizamos PostgreSQL então pesquise a documentação.
 
 </br>
 
