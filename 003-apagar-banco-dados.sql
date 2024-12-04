@@ -1,6 +1,9 @@
 /*
     Exemplos do comando DROP
     **Cuidado ao usar DROP DATABASE:** Essa operação exclui todos os dados do banco de dados.
+    Como é algo didático é apresentado todos os casos de uso PORÉM em um ambiene de produção
+    é ALTAMENTE REVISAR O COMANDO, na maioria das vezes você irá utilizar na consulta o comando
+    WHERE.
 */
 
 -- 1. Dropar tabela
