@@ -26,3 +26,12 @@ DROP SCHEMA nome_esquema_auxiliar;
 
 -- 8. Dropar um tipo de dado
 DROP TYPE nome_tipo_de_dado;
+
+-- 9. Dropar um trigger
+DROP TRIGGER trg_atualizar_estoque ON produtos; 
+
+-- 10. Dropar uma role
+DROP ROLE usuario_leitura; 
+
+-- 11. Dropar uma constraint
+ALTER TABLE pedidos DROP CONSTRAINT chk_valor_total_positivo; 
