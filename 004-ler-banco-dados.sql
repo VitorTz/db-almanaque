@@ -42,3 +42,11 @@ SELECT * FROM carros LIMIT 5;
 -- 11. Ler dados com funções agregagadas
 SELECT COUNT(*) FROM carros; -- Conta quantos registros tem
 SELECT AVG(ano) FROM carros; -- Calcular a média do ano
+
+-- 12. Ler dados com Subconsultas e funções agregadas
+SELECT marca, COUNT(*) AS qtd_carros WHERE ano > (SELECT AVG(ano) FROM carros);
+
+-- 13. Ler dados com Join
+SELECT c.nome, m.nome AS modelo_nome
+FROM carros c
+JOIN modelos m ON c.modelo_id = m.id;
