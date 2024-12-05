@@ -39,7 +39,6 @@ SELECT * FROM carros WHERE marca IN ('Nissa', 'Fiat', 'Ford');
 -- 10. Ler dados com LIMIT
 SELECT * FROM carros LIMIT 5;
 
--- 11. Ler dados com COUNT
-SELECT COUNT(carros_id) AS qtd_carros FROM carros;
-
-
+-- 11. Ler dados com funções agregagadas
+SELECT COUNT(*) FROM carros; -- Conta quantos registros tem
+SELECT AVG(ano) FROM carros; -- Calcular a média do ano
