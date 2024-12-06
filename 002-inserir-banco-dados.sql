@@ -21,7 +21,7 @@ SELECT nome, marca, vendido, ano FROM carros WHERE vendido = TRUE;
 
 
 -- 4. Inserir dados de um subconsulta
-INSERT TO pedidos (cliente_id, produto_id, quantidade)
+INSERT INTO pedidos (cliente_id, produto_id, quantidade)
 SELECT c.id, p.id, 10
 FROM clientes c
 JOIN produtos p ON c.id = p.cliente_id
