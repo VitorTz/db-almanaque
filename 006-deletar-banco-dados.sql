@@ -20,3 +20,9 @@ DELETE FROM materia WHERE nome = 'Física';
 -- 3. Deletar com condionais
 DELETE FROM pedidos
 WHERE data_pedido < '2022-01-01' OR status_pedido = 'Cancelado';
+
+
+-- 4. Deletar com JOIN
+DELETE p FROM pedidos AS p
+JOIN produtos AS prod ON p.produto_id = prod.id
+WHERE prod.status_categoria = 'Descontinuado';
