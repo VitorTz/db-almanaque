@@ -4,4 +4,8 @@
 
     Estrutura básica:
         DELETE * FROM tabela WHERE condição;
+    O comando sem * também funciona
 */
+
+-- 1. Deletando tabela completa
+DELETE * FROM alunos;
