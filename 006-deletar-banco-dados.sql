@@ -7,11 +7,14 @@
     O comando sem * também funciona
 */
 
--- 1. Deletando tabela completa
+-- 1. Deletar tabela completa
 DELETE * FROM alunos;
 DELETE FROM alunos;
 
 
--- 2. Deletando coluna com condição WHERE (deixo sem WHERE)
+-- 2. Deletar coluna com condição WHERE (deixo sem WHERE)
 DELETE alunos FROM materia WHERE nome = 'Física';
 DELETE FROM materia WHERE nome = 'Física';
+
+
+-- 3.
