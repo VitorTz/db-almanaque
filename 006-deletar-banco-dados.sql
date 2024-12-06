@@ -17,4 +17,6 @@ DELETE alunos FROM materia WHERE nome = 'Física';
 DELETE FROM materia WHERE nome = 'Física';
 
 
--- 3.
+-- 3. Deletar com condionais
+DELETE FROM pedidos
+WHERE data_pedido < '2022-01-01' OR status_pedido = 'Cancelado';
