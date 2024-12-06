@@ -1,6 +1,11 @@
 /*
     Agora vamos atualizar colunas e tabelas com o comando UPDATE
     NOTA: altamente desaconselhado para ser usado sem o comando WHERE.
+
+    Estrutura básica:
+        UPDATE nome_da_tabela
+        SET coluna1 = novo_valor1, coluna2 = novo_valor2, ...
+        WHERE condição;
 */
 
 
