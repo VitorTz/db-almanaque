@@ -8,8 +8,10 @@ Vejamos casos de uso para o comando CREATE.
 -- NOTA: Conectar ao banco de dados recém-criado
 \c db_almanaque
 
+
 -- 1. Criando o database
 CREATE DATABASE db_almanaque;
+
 
 -- 2. Criando a tabela
 CREATE TABLE carros (
@@ -19,13 +21,15 @@ CREATE TABLE carros (
     ano INT NOT NULL
 );
 
+
 -- 3. Criando tabela com chave estrangeira
 CREATE TABLE pedidos (
     id SERIAL PRIMARY KEY, 
-    cliente_id INTEGER NOT NULL REFERENCES clientes(id),
+    cliente_id INTEGER NOT NULL REFERENCES clientes(id) ON DELETE CASCADE ON UPDATE CASCADE,
     data_pedido DATE,
     valor NUMERIC(10,2)
 );
+
 
 -- 4. Criar uma view
 CREATE VIEW vw_carros_por_marca AS
@@ -33,11 +37,13 @@ SELECT marca, COUNT(*) AS total_carros
 FROM carros
 GROUP BY marca;
 
+
 -- 5. Criar uma função
 CREATE FUNCTION calcular_idade(data_nascimento DATE)
 RETURNS INT AS $$
     SELECT AGE(CURRENT_DATE, data_nascimento);
 $$ LANGUAGE SQL;
+
 
 -- 6. Criar uma procedure
 CREATE PROCEDURE inserir_cliente(nome TEXT, email TEXT)
@@ -48,8 +54,10 @@ BEGIN
 END;
 $$;
 
+
 -- 7. Criar um índice
 CREATE INDEX idx_pedidos_data ON pedidos (data_pedido);
+
 
 -- 8. Criar um tipo de dado
 CREATE TYPE endereco AS (
@@ -58,8 +66,10 @@ CREATE TYPE endereco AS (
     cidade VARCHAR(100)
 );
 
+
 -- 9. Criar um esquema
 CREATE SCHEMA esquema_auxiliar;
+
 
 -- 10. Criar uma extensão
 CREATE EXTENSION postgis;
