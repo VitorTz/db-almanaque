@@ -8,7 +8,7 @@ VALUES ('Civic', 'Honda', 'Sedan', FALSE, 2019);
 
 
 -- 2. Inserir múltiplos registros com valores explícitos
-INSERT TO carros (nome, marca, modelo, vendido, ano)
+INSERT INTO carros (nome, marca, modelo, vendido, ano)
 VALUES
     ('Civic', 'Honda', 'Sedan', FALSE, 2019),
     ('Gol', 'Volkswagen', 'Hatchback', TRUE, 2017),
