@@ -9,3 +9,9 @@
 
 -- 1. Deletando tabela completa
 DELETE * FROM alunos;
+DELETE FROM alunos;
+
+
+-- 2. Deletando coluna com condição WHERE (deixo sem WHERE)
+DELETE alunos FROM materia WHERE nome = 'Física';
+DELETE FROM materia WHERE nome = 'Física';
