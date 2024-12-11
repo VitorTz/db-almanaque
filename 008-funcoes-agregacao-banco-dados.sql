@@ -19,3 +19,4 @@ UPDATE jogadores SET campeao = TRUE WHERE COUNT(vitoria) > 10;
 
 -- 3. Comando MAX retorna o maior valor
 DELETE FROM jogadores WHERE MAX(vitoria) < 5;
+UPDATE FROM carros SET estado = 'Semi novo' WHERE MAX(quilometragem) < 10000;
