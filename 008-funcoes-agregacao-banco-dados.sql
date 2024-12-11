@@ -14,3 +14,4 @@ DELETE FROM produtos WHERE AVG(preco) > 30000;
 
 -- 2. Comando COUNT retorna a quantidade de linhas
 SELECT COUNT(id) FROM jogadores;
+UPDATE jogadores SET campeao = TRUE WHERE COUNT(vitoria) > 10;
