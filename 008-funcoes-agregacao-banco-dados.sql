@@ -25,3 +25,7 @@ UPDATE FROM carros SET estado = 'Semi novo' WHERE MAX(quilometragem) < 10000;
 -- 4. Comando MIN retorna o menor valor
 SELECT MIN(quilometragem) FROM carros;
 UPDATE carros SET estado = 'usado' WHERE MIN(quilometragem) > 10000;
+
+
+-- 5. Comando SUM retorna a soma dos valores
+SELECT SUM(quilometragem) FROM carros;
