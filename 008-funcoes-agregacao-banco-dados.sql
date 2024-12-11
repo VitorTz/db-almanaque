@@ -29,3 +29,6 @@ UPDATE carros SET estado = 'usado' WHERE MIN(quilometragem) > 10000;
 
 -- 5. Comando SUM retorna a soma dos valores
 SELECT SUM(quilometragem) FROM carros;
+UPDATE produto SET preco = preco * 0.9 WHERE SUM(preco) > 1000;
+
+
