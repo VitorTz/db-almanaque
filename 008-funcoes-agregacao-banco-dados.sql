@@ -32,3 +32,5 @@ SELECT SUM(quilometragem) FROM carros;
 UPDATE produto SET preco = preco * 0.9 WHERE SUM(preco) > 1000;
 
 
+-- 6. Comando HAVING e usado para filtrar os dados
+SELECT * FROM carros WHERE estado = 'novo' GROUP BY estado HAVING SUM(quilometragem) > 10000;
