@@ -53,3 +53,7 @@ BEGIN
     INSERT INTO clientes (nome, email) VALUES (nome, email);
 END;
 $$;
+
+
+-- 7. Criar um índice
+CREATE INDEX idx_pedidos_data ON pedidos (data_pedido);
