@@ -12,3 +12,8 @@ FROM produtos GROUP BY categoria;
 -- 2. Agrupar utilizando AVG
 SELECT categoria, AVG(preco)
 FROM produtos GROUP BY categoria;
+
+
+-- 3. Agrupar utilizando MIN
+SELECT nome, MIN(nota)
+FROM alunos GROUP BY nome;
