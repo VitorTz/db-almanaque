@@ -29,3 +29,10 @@ CREATE TABLE pedidos (
     data_pedido DATE,
     valor NUMERIC(10,2)
 );
+
+
+-- 4. Criar uma view
+CREATE VIEW vw_carros_por_marca AS
+SELECT marca, COUNT(*) AS total_carros
+FROM carros
+GROUP BY marca;
