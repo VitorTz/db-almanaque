@@ -34,3 +34,11 @@ END;
 
 -- 2.2 Chamando procedimento
 CALL atualizar_bonus(2);
+
+
+-- 3. Procedimento para excluir um funcionário
+CREATE PROCEDURE demitir_funcionario(id INTEGER)
+AS
+BEGIN
+    DELETE FROM funcionarios WHERE id = id;
+END;
