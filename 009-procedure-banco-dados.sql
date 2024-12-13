@@ -54,3 +54,6 @@ BEGIN
     INSERT INTO clientes (nome, email)
     VALUES (nome, email);
 END;
+
+-- 4.2 Chamando procedimento
+CALL inserir_cliente('Joaquim', 'joaquim@joaquim')
