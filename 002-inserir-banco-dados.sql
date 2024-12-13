@@ -46,3 +46,7 @@ INSERT INTO usuarios (nome, email)
 VALUES ('Novo usuario', 'novousuario@novoemail.com');
 
 
+-- 9. Inserir dados gerados de uma sequência
+CREATE SEQUENCE seq_pedidos;
+INSERT INTO pedidos (id, cliente_id, produto_id, quantidade)
+VALUES (nextval('seq_pedidos'), 1, 2, 5);
