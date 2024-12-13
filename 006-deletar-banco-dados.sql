@@ -10,6 +10,12 @@
     transações garantem uma consistência de dados.
 */
 
+-- Dica DELETE com Transaction
+BEGIN;
+DELETE FROM alunos;
+DELETE FROM matriculas;
+COMMIT;
+
 -- 1. Deletar tabela completa
 DELETE * FROM alunos;
 DELETE FROM alunos;
