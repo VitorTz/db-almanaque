@@ -65,3 +65,7 @@ CREATE TYPE endereco AS (
     numero INTEGER,
     cidade VARCHAR(100)
 );
+
+
+-- 9. Criar um esquema
+CREATE SCHEMA esquema_auxiliar;
