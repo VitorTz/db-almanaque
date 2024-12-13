@@ -57,3 +57,11 @@ $$;
 
 -- 7. Criar um índice
 CREATE INDEX idx_pedidos_data ON pedidos (data_pedido);
+
+
+-- 8. Criar um tipo de dado
+CREATE TYPE endereco AS (
+    rua VARCHAR(100),
+    numero INTEGER,
+    cidade VARCHAR(100)
+);
