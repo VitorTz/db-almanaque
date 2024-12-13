@@ -22,3 +22,8 @@ FROM alunos GROUP BY nome;
 -- 4. Agrupar utilizando MAX
 SELECT nome, MAX(nota)
 FROM alunos GROUP BY nome;
+
+
+-- 5. Agrupar com SUM
+SELECT SUM(preco), categoria
+FROM produtos GROUP BY categoria;
