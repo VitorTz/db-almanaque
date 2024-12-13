@@ -9,3 +9,5 @@ Vejamos casos de uso para o comando CREATE.
 \c db_almanaque
 
 
+-- 1. Criando o database
+CREATE DATABASE db_almanaque;
