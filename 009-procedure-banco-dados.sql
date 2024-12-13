@@ -18,3 +18,16 @@ END;
 
 -- 1.2 Chamando procedimento
 CALL calcular_bonus(2);
+
+
+
+-- 2. Procedimento para calcular o bonus de um departamento com UPDATE
+CREATE PROCEDURE atualizar_bonus(departamento_id INTEGER)
+AS
+BEGIN
+    UPDATE departamentos
+    SET bonus = (
+        SELECT AVG(salario) AS media_salario
+        FROM funcionarios WHERE departamento = departamento_id
+    ) WHERE departamento_nome = 'Comercial';
+END;
