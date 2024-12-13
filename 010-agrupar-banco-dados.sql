@@ -17,3 +17,8 @@ FROM produtos GROUP BY categoria;
 -- 3. Agrupar utilizando MIN
 SELECT nome, MIN(nota)
 FROM alunos GROUP BY nome;
+
+
+-- 4. Agrupar utilizando MAX
+SELECT nome, MAX(nota)
+FROM alunos GROUP BY nome;
