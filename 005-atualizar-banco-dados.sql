@@ -6,8 +6,15 @@
         UPDATE nome_da_tabela
         SET coluna1 = novo_valor1, coluna2 = novo_valor2, ...
         WHERE condição;
+
+    Considere usar Transaction para isso.
+    transações garantem uma consistência de dados.
 */
 
+-- Dica com Transaction
+BEGIN;
+UPDATE tabela SET coluna = novo_valor;
+COMMIT;
 
 -- 1. Atualizando uma tabela
 UPDATE jogadores SET nome_jogador = 'Lucas Moura';
