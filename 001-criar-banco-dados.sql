@@ -69,3 +69,7 @@ CREATE TYPE endereco AS (
 
 -- 9. Criar um esquema
 CREATE SCHEMA esquema_auxiliar;
+
+
+-- 10. Criar uma extensão
+CREATE EXTENSION postgis;
