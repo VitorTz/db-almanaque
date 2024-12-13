@@ -43,3 +43,13 @@ CREATE FUNCTION calcular_idade(data_nascimento DATE)
 RETURNS INT AS $$
     SELECT AGE(CURRENT_DATE, data_nascimento);
 $$ LANGUAGE SQL;
+
+
+-- 6. Criar uma procedure
+CREATE PROCEDURE inserir_cliente(nome TEXT, email TEXT)
+LANGUAGE plpgsql AS
+$$
+BEGIN
+    INSERT INTO clientes (nome, email) VALUES (nome, email);
+END;
+$$;
