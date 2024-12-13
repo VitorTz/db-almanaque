@@ -7,3 +7,8 @@
 -- 1. Agrupar utilizando COUNT.
 SELECT categoria, COUNT(*)
 FROM produtos GROUP BY categoria;
+
+
+-- 2. Agrupar utilizando AVG
+SELECT categoria, AVG(preco)
+FROM produtos GROUP BY categoria;
