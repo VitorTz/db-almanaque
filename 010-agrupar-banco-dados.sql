@@ -27,3 +27,8 @@ FROM alunos GROUP BY nome;
 -- 5. Agrupar com SUM
 SELECT SUM(preco), categoria
 FROM produtos GROUP BY categoria;
+
+
+-- 6. Agrupar com 2 colunas
+SELECT categoria, COUNT(*) AS quantidade
+FROM produtos GROUP BY categoria, quantidade;
