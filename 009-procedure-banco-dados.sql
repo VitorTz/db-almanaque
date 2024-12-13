@@ -29,5 +29,8 @@ BEGIN
     SET bonus = (
         SELECT AVG(salario) AS media_salario
         FROM funcionarios WHERE departamento = departamento_id
-    ) WHERE departamento_nome = 'Comercial';
+    );
 END;
+
+-- 2.2 Chamando procedimento
+CALL atualizar_bonus(2);
