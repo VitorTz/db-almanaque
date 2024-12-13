@@ -45,3 +45,12 @@ END;
 
 -- 3.2 Chamando procedimento
 CALL demitir_funcionario(3)
+
+
+-- 4. Criando procedimento para inserir novo funcionario
+CREATE OR REPLACE PROCEDURE inserir_cliente(nome TEXT, email TEXT)
+AS
+BEGIN
+    INSERT INTO clientes (nome, email)
+    VALUES (nome, email);
+END;
