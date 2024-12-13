@@ -20,3 +20,12 @@ CREATE TABLE carros (
     modelo VARCHAR(100) NOT NULL,
     ano INT NOT NULL
 );
+
+
+-- 3. Criando tabela com chave estrangeira
+CREATE TABLE pedidos (
+    id SERIAL PRIMARY KEY, 
+    cliente_id INTEGER NOT NULL REFERENCES clientes(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    data_pedido DATE,
+    valor NUMERIC(10,2)
+);
