@@ -36,3 +36,10 @@ CREATE VIEW vw_carros_por_marca AS
 SELECT marca, COUNT(*) AS total_carros
 FROM carros
 GROUP BY marca;
+
+
+-- 5. Criar uma função
+CREATE FUNCTION calcular_idade(data_nascimento DATE)
+RETURNS INT AS $$
+    SELECT AGE(CURRENT_DATE, data_nascimento);
+$$ LANGUAGE SQL;
