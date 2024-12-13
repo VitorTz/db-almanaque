@@ -5,6 +5,9 @@
     Estrutura básica:
         DELETE * FROM tabela WHERE condição;
     O comando sem * também funciona
+
+    Considere usar Transaction para isso.
+    transações garantem uma consistência de dados.
 */
 
 -- 1. Deletar tabela completa
