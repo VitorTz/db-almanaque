@@ -42,3 +42,6 @@ AS
 BEGIN
     DELETE FROM funcionarios WHERE id = id;
 END;
+
+-- 3.2 Chamando procedimento
+CALL demitir_funcionario(3)
