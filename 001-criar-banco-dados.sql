@@ -11,3 +11,12 @@ Vejamos casos de uso para o comando CREATE.
 
 -- 1. Criando o database
 CREATE DATABASE db_almanaque;
+
+
+-- 2. Criando a tabela
+CREATE TABLE carros (
+    id SERIAL PRIMARY KEY, 
+    marca VARCHAR(100) NOT NULL,
+    modelo VARCHAR(100) NOT NULL,
+    ano INT NOT NULL
+);
