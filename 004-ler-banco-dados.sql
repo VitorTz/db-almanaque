@@ -4,6 +4,9 @@
 
 */
 
+-- Sintaxe:
+SELECT colunas FROM nome_tabela;
+
 -- 1. Ler todos os dados de uma tabela
 SELECT * FROM nome_tabela;
 
