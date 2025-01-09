@@ -1,6 +1,11 @@
 /*
-    Comando INSERT TO
+    Comando INSERT INTO
+   
 */
+
+-- Sintaxe:
+INSERT INTO nome_tabela (coluna1, coluna2, ...)
+VALUES (valor1, valor2, ...);
 
 -- 1. Inserir um único registro em uma tabela
 INSERT INTO carros (nome, marca, modelo, vendido, ano)
