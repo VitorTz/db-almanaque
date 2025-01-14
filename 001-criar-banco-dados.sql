@@ -1,16 +1,17 @@
-/* 
-Nós já criamos o banco em nosso arquivo Dockerfile, mas caso não tivéssemos criado o comando
-abaixo para criação
+1 - psql -U postgres
 
-Vejamos casos de uso para o comando CREATE.
-*/
+2 - CREATE DATABASE nome_da_base;
 
--- NOTA: Conectar ao banco de dados recém-criado
-\c db_almanaque
+3 - GRANT ALL PRIVILEGES ON DATABASE nome_da_base TO nome_do_usuario;
 
+4 - \c db_almanaque
 
--- 1. Criando o database
-CREATE DATABASE db_almanaque;
+5 - ALTER DEFAULT PRIVILEGES IN SCHEMA public
+    GRANT ALL ON TABLES TO nome_do_usuario;
+
+6 - ALTER DEFAULT PRIVILEGES IN SCHEMA public
+    GRANT ALL ON SEQUENCES TO nome_do_usuario;
+
 
 
 -- 2. Criando a tabela
