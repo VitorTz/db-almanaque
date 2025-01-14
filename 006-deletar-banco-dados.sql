@@ -10,6 +10,11 @@
     transações garantem uma consistência de dados.
 */
 
+-- Remove coluna
+ALTER TABLE nome_da_tabela DROP COLUMN nome_da_coluna [CASCADE | RESTRICT];
+
+
+
 -- Dica DELETE com Transaction
 BEGIN;
 DELETE FROM alunos;

@@ -20,6 +20,10 @@ COMMIT;
 UPDATE jogadores SET nome_jogador = 'Lucas Moura';
 
 
+-- Adicionar coluna
+ALTER TABLE nome_da_tabela ADD COLUMN nome_da_coluna tipo_de_dado [DEFAULT valor_padrao] [constraints];
+
+
 -- 2. Atualizando uma coluna
 UPDATE jogadores SET numero_camisa = 10 WHERE nome_jogador = 'Lucas Moura';
 

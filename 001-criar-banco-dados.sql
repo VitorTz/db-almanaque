@@ -2,7 +2,9 @@
 
 2 - CREATE DATABASE nome_da_base;
 
-3 - GRANT ALL PRIVILEGES ON DATABASE nome_da_base TO nome_do_usuario;
+3 - GRANT ALL PRIVILEGES ON DATABASE nome_da_base TO usuario;
+
+3.1 ALTER DATABASE banco OWNER TO usuario;
 
 4 - \c db_almanaque
 
@@ -11,7 +13,6 @@
 
 6 - ALTER DEFAULT PRIVILEGES IN SCHEMA public
     GRANT ALL ON SEQUENCES TO nome_do_usuario;
-
 
 
 -- 2. Criando a tabela
